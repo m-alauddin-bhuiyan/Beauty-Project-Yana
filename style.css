@@ -1,0 +1,153 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times';
+    src: url(./times.ttf);
+}
+
+.font-times {
+    font-family: 'Times';
+}
+
+.slick-next,
+.slick-prev {
+    height: 50px;
+    width: 50px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    content: "\f061";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+    background: #fff;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 200px;
+    color: #FD551B
+}
+
+.slick-prev::before {
+    content: "\f060";
+}
+
+.slick-next:hover:before,
+.slick-prev:hover:before {
+    background: #FD551B;
+    color: #fff;
+}
+
+.custom-menu li a:hover{
+    color: #FD551B !important;
+}
+.has-bg-img {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.button-design {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.btn-effect:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.blog-slick-container .slick-slider {
+    margin: 0 -15px;
+}
+
+.blog-slick-container .slick-slide {
+    padding: 10px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+.hidden-mobile {
+    display: block;
+}
+
+.hidden-desktop {
+    display: none !important;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .hidden-desktop {
+        display: block !important;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+}
+
+
+/* slider btn responsive  */
+@media screen and (max-width: 480px) {
+
+    .slick-next,
+    .slick-prev {
+        height: 30px;
+        width: 30px;     
+    }
+
+    .slick-next{
+        right: -12px;
+    }
+
+    .slick-prev{
+        left: -12px;
+    }
+
+
+    .slick-next::before,
+    .slick-prev::before {
+        content: "\f061";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+        background: #fff;
+        padding: 6px;
+        border-radius: 85px;
+        color: #FD551B
+
+    }
+
+    .slick-prev::before {
+        content: "\f060";
+    }
+
+    .slick-next:hover:before,
+    .slick-prev:hover:before {
+        background: #FD551B;
+        color: #fff;
+    }
+}

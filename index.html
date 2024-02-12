@@ -97,21 +97,19 @@
                 <div class="flex flex-col-reverse lg:flex-row">
                     <div class="w-full lg:w-1/2 2xl:w-[40%] banner-left  block lg:flex items-center">
                         
-                        <div>
+                        <div class="mt-[60px] lg:mt-0">
                             <span class="banner-tag text-[#FD551B] text-[18px] capitalize ">Welcome to Yana Family</span>
                             <h1 class="font-times text-[72px] text-[#111] leading-[79px] tracking-[1px] font-[700] mb-[32px]">Glow Beyond <br> Limits with Yana  <br> Skin Serum</h1>
                             <p class="text-[#696D75] text-[16px] 2xl:text-[18px]">Our meticulously crafted products are designed to <br> rejuvenate, hydrate, and transform your skin, revealing <br> a luminous glow that captivates.</p>
 
                             <div class="flex gap-[10px] pt-[60px] items-center">
-                                <button
-                                    class="button-design btn-effect border rounded-[37px] bg-[#111111] px-[16px] lg:px-[32px] py-[8px] lg:py-[16px] text-[#FFFFFF] text-[12px] lg:text-[18px] test_button btn-active">Shop
+                                <button class="button-design btn-effect border rounded-[37px] bg-[#111111] px-[16px] lg:px-[32px] py-[8px] lg:py-[16px] text-[#FFFFFF] text-[12px] lg:text-[18px] test_button btn-active">Shop
                                     Now <i class="fa-solid fa-arrow-right text-[#FD551B] pl-2"></i></button>
 
 
                                 <p class="text-[#11111155] text-[14px] lg:text-[18px] font-[600] test_button">
                                 <div class="bg-white border border-black rounded-full p-[4px] lg:p-3 test_button">
-                                    <i
-                                        class="fa-solid fa-play bg-[#FD551B] text-white text-[17px ] lg:text-[20px] p-[6px] lg:p-[8px] rounded-full text-center items-center w-[28px] lg:w-[35px] h-[28px] lg:h-[35px]"></i>
+                                    <i class="fa-solid fa-play bg-[#FD551B] text-white text-[17px ] lg:text-[20px] p-[6px] lg:p-[8px] rounded-full text-center items-center w-[28px] lg:w-[35px] h-[28px] lg:h-[35px]"></i>
                                 </div>
                                 Watch Video
                                 </p>
@@ -120,8 +118,24 @@
 
 
                     </div>
-                    <div class="w-full lg:w-1/2  2xl:w-[60%] banner-right block lg:flex items-end justify-end">
-                        <img src="./images/banner-model.png" alt="Model Image" class="w-[70%] lg:w-full">
+                    <div class="w-full lg:w-1/2  2xl:w-[60%] banner-right block lg:flex items-end justify-end relative">
+                        <img src="./images/banner-model.png" alt="Model Image" class="w-[94%] lg:w-full">
+
+                        <div class="absolute z-[1] right-[20px] top-[135px] md:top-[200px] lg:top-[250px] right-absolute text-[#111111] space-y-[2px] lg:space-y-1">
+                            <p class="text-[8px] lg:text-[16px] lg:text-[24px] font-[700]">44</p>
+                            <p class="text-[8px] lg:text-[16px] lg:text-[12px] font-[400] text-[#353535]">Product Have</p>
+
+                            <p class="text-[8px] lg:text-[16px] lg:text-[24px] font-[700]">5K+</p>
+                            <p class="text-[8px] lg:text-[16px] lg:text-[12px] font-[400] text-[#353535]">Smiling Clients</p>
+
+                            <p class="text-[8px] md:text-[16px] lg:text-[24px] font-[700]">4.9/5</p>
+                            <i class="fa fa-star text-[#FFC947] text-[8px] md:text-[14px] lg:text-[12px]"></i>
+                            <i class="fa fa-star text-[#FFC947] text-[8px] md:text-[14px] lg:text-[12px]"></i>
+                            <i class="fa fa-star text-[#FFC947] text-[8px] md:text-[14px] lg:text-[12px]"></i>
+                            <i class="fa fa-star text-[#FFC947] text-[8px] md:text-[14px] lg:text-[12px]"></i>
+                            <i class="fa-solid fa-star-half-stroke text-[#FFC947] text-[8px] lg:text-[14px] lg:text-[12px]"></i>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -182,7 +196,7 @@
         <!-- Offer Section  -->
         <Section class="mt-[60px] lg:mt-[90px] flex items-center h-[350px] lg:h-[598px] 2xl:h-[700px] has-bg-img"
             style="background: url(./images/offer-sec-img.jpg);">
-            <div class="container mx-auto sm:container md:container lg:container xl:container 2xl:conatiner">
+            <div class="custom-container mx-auto">
                 <div data-aos="flip-left" data-aos-duration="600" class="w-2/3 lg:w-1/2">
                     <h1
                         class="text-[#FD551B] text-[14px] uppercase lg:text-[18px] leading-[28px] font-[400] lg:leading-[27px]">
@@ -379,7 +393,7 @@
 
         <!-- quality product section  -->
         <section class="bg-[#FFF] mt-[60px] lg:mt-[130px] mb-[20px] lg:mb-[100px]">
-            <div class="container md:container lg:container xl:container 2xl:conatiner mx-auto">
+            <div class="custom-container mx-auto">
 
                 <div class="flex flex-col lg:flex-row justify-between">
                     <div data-aos="fade-up" data-aos-duration="700" class="w-full lg:w-[30%]">
@@ -708,67 +722,70 @@
 
 
     <!-- Footer Section  -->
-    <Footer class="bg-[#1B1F36]">
-        <footer
-            class="footer flex flex-wrap lg:flex-row lg:grid  justify-start lg:justify-between md:justify-between lg:justify-between pt-10 pb-10 bg-[#1B1F36] text-[#FFFFFF] custom-container mx-auto">
-            <aside class="w-full lg:w-[unset]">
-                <p class="text-[16px] font-[600] pb-5">About Yana</p>
-                <p class="text-[14px] font-[400] text-[#FFFFFFE5]">Thousands of people have benefited from <br> our
-                    services. But let’s be real — there’s no <br> magic bullet, just science. That’s why <br> we do what
-                    we do.</p>
-                <div class="pt-3 flex gap-8 text-[22px]">
-                    <p><i class="fa-brands fa-facebook"></i></p>
-                    <p><i class="fa-brands fa-twitter"></i></p>
-                    <p><i class="fa-brands fa-instagram"></i></p>
-                    <p><i class="fa-brands fa-github"></i></p>
-                </div>
-            </aside>
+    <footer class="bg-[#1B1F36] py-[30px] lg:py-0">
+        <div class="custom-container mx-auto">
 
-            <nav class="w-[46%] lg:w-full">
-                <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Pages</h6>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">About Us</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Shop</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Blogs</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Reviews</a>
-            </nav>
-            <nav class="w-[46%] lg:w-full">
-                <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Products</h6>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Clensers</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Serums</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Creams</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Toners</a>
-            </nav>
-            <nav class="w-[46%] lg:w-full">
-                <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Help</h6>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Shipping & Returns</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Track Order</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">FAQ</a>
-            </nav>
-            <nav class="w-[46%] lg:w-full">
-                <h6 class="footer-title text-[16px] font-[600]  text-[#FFFFFF]">Contact Us</h6>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]"><i
-                        class="fa-solid fa-paper-plane mr-[4px]"></i>hello@yana.com</a>
-                <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]"><i
-                        class="fa-solid fa-phone mr-[4px]"> </i>(201) 555-0124</a>
-                <div>
+            <div class="footer flex flex-wrap lg:flex-row lg:grid  justify-start lg:justify-between md:justify-between lg:justify-between pt-10 pb-10 bg-[#1B1F36] text-[#FFFFFF]">
+                <aside class="w-full lg:w-[unset]">
+                    <p class="text-[16px] font-[600] pb-5">About Yana</p>
+                    <p class="text-[14px] font-[400] text-[#FFFFFFE5]">Thousands of people have benefited from <br> our
+                        services. But let’s be real — there’s no <br> magic bullet, just science. That’s why <br> we do what
+                        we do.</p>
+                    <div class="pt-3 flex gap-8 text-[22px]">
+                        <p><i class="fa-brands fa-facebook"></i></p>
+                        <p><i class="fa-brands fa-twitter"></i></p>
+                        <p><i class="fa-brands fa-instagram"></i></p>
+                        <p><i class="fa-brands fa-github"></i></p>
+                    </div>
+                </aside>
+    
+                <nav class="w-[46%] lg:w-full">
+                    <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Pages</h6>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">About Us</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Shop</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Blogs</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Reviews</a>
+                </nav>
+                <nav class="w-[46%] lg:w-full">
+                    <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Products</h6>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Clensers</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Serums</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Creams</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Toners</a>
+                </nav>
+                <nav class="w-[46%] lg:w-full">
+                    <h6 class="footer-title text-[16px] font-[600] text-[#FFFFFF]">Help</h6>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Shipping & Returns</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">Track Order</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]">FAQ</a>
+                </nav>
+                <nav class="w-[46%] lg:w-full">
+                    <h6 class="footer-title text-[16px] font-[600]  text-[#FFFFFF]">Contact Us</h6>
                     <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]"><i
-                            class="fa-solid fa-location-dot mr-[4px]"> </i>6391 Elgin St. Celina, <br>
-                        Delaware 10299</a>
-                </div>
-            </nav>
+                            class="fa-solid fa-paper-plane mr-[4px]"></i>hello@yana.com</a>
+                    <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]"><i
+                            class="fa-solid fa-phone mr-[4px]"> </i>(201) 555-0124</a>
+                    <div>
+                        <a class="link link-hover text-[14px] font-[400] text-[#FFFFFFE5]"><i
+                                class="fa-solid fa-location-dot mr-[4px]"> </i>6391 Elgin St. Celina, <br>
+                            Delaware 10299</a>
+                    </div>
+                </nav>
+    
+            </div>
+            
+            <div  class="footer mt-[30px] lg:mt-0 flex flex-wrap-reverse justify-center md:justify-between lg:justify-between items-center  bg-[#1B1F36] text-[#FFFFFF] border-t-[1px] lg:pt-[10px] ">
+                <aside class="items-center grid-flow-col">
+                    <p class="text-[12px] font-[400] leading-[19px] text-[#FFFFFF] mt-[-20px] lg:mt-[0px] lg:pt-[0px]">© Copyright 2024, All Rights Reserved by Yana</p>
+                </aside>
+                <nav class="grid-flow-col gap-0 lg:gap-4 md:place-self-center md:justify-self-end">
+                    <img src="./images/Logo-img.png" alt="" class="pt-[30px] lg:pt-0">
+                </nav>
+            </div>
+            
+        </div>
 
-        </footer>
-        <footer
-            class="footer flex flex-wrap-reverse justify-center md:justify-between lg:justify-between items-center  bg-[#1B1F36] text-[#FFFFFF] border-t-[1px] pt-[10px] custom-container mx-auto">
-            <aside class="items-center grid-flow-col">
-                <p class="text-[12px] font-[400] leading-[19px] text-[#FFFFFF] mt-[-20px] lg:mt-[0px] lg:pt-[0px]">© Copyright 2024, All Rights Reserved by Yana</p>
-            </aside>
-            <nav class="grid-flow-col gap-0 lg:gap-4 md:place-self-center md:justify-self-end">
-                <img src="./images/Logo-img.png" alt="">
-            </nav>
-        </footer>
-
-    </Footer>
+    </footer>
 
 
 

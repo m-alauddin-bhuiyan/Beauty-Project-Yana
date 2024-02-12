@@ -6,7 +6,11 @@ body {
 
 @font-face {
     font-family: 'Times';
-    src: url(./times.ttf);
+    src: url(timesbd.ttf);
+}
+
+.main-banner-section{
+    height: 92vh;
 }
 
 .font-times {
@@ -88,15 +92,35 @@ body {
     display: none !important;
 }
 
+.custom-container{
+    width: 1280px;
+}
 
-@media (min-width: 1280px) and (min-width: 1536px){
 
-    .container {
-        max-width: 1360px !important;
+
+@media screen and (min-width:1690px) {
+    .custom-container {
+        width: 100%;
+        max-width: 1570px;
+        margin: auto
+    }
+}
+@media screen and (max-width:1689px) {
+    .custom-container {
+        width: 1280px;
+    }
+    .banner-left h1{
+        font-size: 66px;
     }
 }
 
 
+
+@media screen and (max-width:1279px) {
+    .custom-container{
+        width: 100%;
+    }
+}
 @media screen and (max-width:992px) {
     .hidden-mobile {
         display: none !important;
@@ -110,6 +134,10 @@ body {
         padding-left: 20px;
         padding-right: 20px;
 
+    }
+    .banner-left h1{
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 
